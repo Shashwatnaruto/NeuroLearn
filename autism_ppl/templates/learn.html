@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn Motion - Class 9 Physics</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px;">
+
+    <h1> Motion - Class 9 NCERT Physics</h1>
+
+    <h2> Key Concept: Speed</h2>
+    <p>Speed is the distance travelled by an object in unit time. It is given by the formula:</p>
+    <pre style="background: #f0f0f0; padding: 10px;">Speed = Distance / Time</pre>
+
+    <h2>🧪 Quick Quiz:</h2>
+    <form action="/motion" method="post">
+        <p>{{ question }}</p>
+        <input type="text" name="answer" placeholder="Answer in m/s" style="padding: 5px;">
+        <button type="submit" style="padding: 5px 10px;">Submit</button>
+    </form>
+
+    {% if result %}
+        <p style="margin-top: 20px;"><strong>{{ result }}</strong></p>
+        <p><em>{{ explanation }}</em></p>
+    {% endif %}
+
+    <p style="margin-top: 30px;"><a href="/" style="text-decoration: none; color: blue;">← Back to Dashboard</a></p>
+</body>
+</html>
